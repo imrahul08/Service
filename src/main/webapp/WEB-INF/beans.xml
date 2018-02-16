@@ -8,9 +8,6 @@
 
 	<import resource="classpath:META-INF/cxf/cxf.xml" />
 
-	<jaxws:endpoint id="employeeService"
-		implementor="com.rahul.serviceimpl.EmployeeServiceImpl" address="/Employee" />
-
 	<jaxrs:server address="/rs" id="empService">
 		<jaxrs:serviceBeans>
 			<ref bean="employeeRest" />
